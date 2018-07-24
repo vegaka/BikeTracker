@@ -17,6 +17,7 @@
 		9AAF636B21038E630040F486 /* BikeTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF636921038E630040F486 /* BikeTracker.xcdatamodeld */; };
 		9AED0A3121077CE000D36C8F /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED0A3021077CE000D36C8F /* StatsTableViewCell.swift */; };
 		9AED0A332107805500D36C8F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED0A322107805500D36C8F /* Utils.swift */; };
+		9AED0A352107B80900D36C8F /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AED0A342107B80900D36C8F /* icon.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9AAF636A21038E630040F486 /* BikeTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeTracker.xcdatamodel; sourceTree = "<group>"; };
 		9AED0A3021077CE000D36C8F /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
 		9AED0A322107805500D36C8F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9AED0A342107B80900D36C8F /* icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = icon.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		9AAF6326210364960040F486 = {
 			isa = PBXGroup;
 			children = (
+				9AED0A342107B80900D36C8F /* icon.svg */,
 				9AAF6331210364960040F486 /* BikeTracker */,
 				9AAF6330210364960040F486 /* Products */,
 			);
@@ -140,6 +143,7 @@
 				9AAF633D210364970040F486 /* LaunchScreen.storyboard in Resources */,
 				9AAF633A210364970040F486 /* Assets.xcassets in Resources */,
 				9AAF6338210364960040F486 /* Main.storyboard in Resources */,
+				9AED0A352107B80900D36C8F /* icon.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
