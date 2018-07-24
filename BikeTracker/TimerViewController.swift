@@ -10,6 +10,8 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    private let defaultTimeString = "00:00.00"
+
     private var startTime: Date = Date()
     private var curTime: Date = Date()
     private var endTime: Date = Date()
@@ -36,7 +38,7 @@ class TimerViewController: UIViewController {
             timer.invalidate()
             finalTimeDiff = endTime.timeIntervalSince(startTime)
             startButton.setTitle("Start", for: .normal)
-            timeLabel.text = formatTimeDiff(timeDiff: finalTimeDiff)
+            timeLabel.text = Utils.formatTimeDiff(timeDiff: finalTimeDiff)
             TripManager.addNewTrip(startTime: startTime, endTime: endTime, direction: direction)
         } else {
             startTime = Date()
@@ -51,23 +53,8 @@ class TimerViewController: UIViewController {
         if (running) {
             curTime = Date()
             curTimeDiff = curTime.timeIntervalSince(startTime)
-            timeLabel.text = formatTimeDiff(timeDiff: curTimeDiff)
+            timeLabel.text = Utils.formatTimeDiff(timeDiff: curTimeDiff)
         }
-    }
-
-    func formatTimeDiff(timeDiff: TimeInterval) -> String {
-        var result = ""
-
-        let hundreths = Int(timeDiff.truncatingRemainder(dividingBy: 1) * 100)
-        let seconds = Int(timeDiff) % 60
-        let minutes = (Int(timeDiff) / 60) % 60
-
-        result = hundreths < 10 ? "0\(hundreths)" : "\(hundreths)"
-        result = seconds < 10 ? "0\(seconds).\(result)" : "\(seconds).\(result)"
-        result = minutes < 10 ? "0\(minutes):\(result)" : "\(minutes):\(result)"
-
-        return result
-
     }
 
     @IBAction func directionButtonClicked(_ sender: UIButton) {
@@ -75,6 +62,7 @@ class TimerViewController: UIViewController {
             direction = !direction
             let buttonTitle = direction ? "Work" : "Home"
             directionButton.setTitle(buttonTitle, for: .normal)
+            timeLabel.text = defaultTimeString
         }
     }
 }

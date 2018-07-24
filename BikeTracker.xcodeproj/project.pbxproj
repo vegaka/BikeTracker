@@ -15,6 +15,8 @@
 		9AAF634521038C310040F486 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF634421038C310040F486 /* StatsViewController.swift */; };
 		9AAF634721038CC60040F486 /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF634621038CC60040F486 /* TripManager.swift */; };
 		9AAF636B21038E630040F486 /* BikeTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF636921038E630040F486 /* BikeTracker.xcdatamodeld */; };
+		9AED0A3121077CE000D36C8F /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED0A3021077CE000D36C8F /* StatsTableViewCell.swift */; };
+		9AED0A332107805500D36C8F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED0A322107805500D36C8F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9AAF634421038C310040F486 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		9AAF634621038CC60040F486 /* TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
 		9AAF636A21038E630040F486 /* BikeTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeTracker.xcdatamodel; sourceTree = "<group>"; };
+		9AED0A3021077CE000D36C8F /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		9AED0A322107805500D36C8F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				9AAF633E210364970040F486 /* Info.plist */,
 				9AAF634421038C310040F486 /* StatsViewController.swift */,
 				9AAF634621038CC60040F486 /* TripManager.swift */,
+				9AED0A3021077CE000D36C8F /* StatsTableViewCell.swift */,
+				9AED0A322107805500D36C8F /* Utils.swift */,
 			);
 			path = BikeTracker;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AAF6335210364960040F486 /* TimerViewController.swift in Sources */,
+				9AED0A3121077CE000D36C8F /* StatsTableViewCell.swift in Sources */,
 				9AAF634521038C310040F486 /* StatsViewController.swift in Sources */,
+				9AED0A332107805500D36C8F /* Utils.swift in Sources */,
 				9AAF634721038CC60040F486 /* TripManager.swift in Sources */,
 				9AAF6333210364960040F486 /* AppDelegate.swift in Sources */,
 				9AAF636B21038E630040F486 /* BikeTracker.xcdatamodeld in Sources */,
