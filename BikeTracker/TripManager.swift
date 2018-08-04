@@ -44,7 +44,7 @@ class TripManager {
 
         do {
             try managedContext.save()
-            trips.append(trip)
+            trips.insert(trip, at: 0)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
